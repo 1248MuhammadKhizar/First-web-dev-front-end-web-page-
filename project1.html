@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Form</title>
+  <style>
+    .container {
+      color: black;
+      border: 10px solid gray;
+      padding: 20px;
+      margin: 30px;
+      background-color: rgb(228, 228, 224);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      justify-content: center; /* Center horizontally */
+      align-items: center;
+    }
+    h1 {
+      text-align: center;
+      color: aliceblue;
+      background-color: rgb(83, 162, 188);
+      text-decoration: underline;
+      font-weight: 1000;
+      font-size: 50px;
+    }
+    input[type="text"], input[type="number"] {
+      width: 100%;
+    }
+    legend#heading_of_gender {
+      color: rgb(26, 5, 5);
+      font-weight: bolder;
+    }
+    fieldset#f1id {
+      color: darkgrey;
+    }
+    select#Select1:hover {
+      color: rgb(12, 123, 123);
+      text-decoration: underline;
+    }
+    select#Select1:visited {
+      color: green;
+    }
+    input[type="submit"] {
+      width: 100%;
+      position: relative;
+      padding: 10px;
+      border: 5px solid darkgreen;
+      background-color: lightgreen;
+    }
+    input[type="submit"]:hover {
+      background-color: darkgreen;
+      cursor: pointer;
+    }
+    p#image {
+      color: rgb(228, 228, 224);
+    }
+    .image-container {
+  padding: 10px;
+  display: inline-block;
+  margin: 10px 0;
+  width: 150px;
+  background-color: lightgray; /* Set background color here */
+  text-align: left; /* Center the image inside the container */
+}
+
+.image-container img {
+  width: 100%;
+}
+h4{
+  padding: 0px;
+  border: 40px;
+
+}
+.link{
+   text-align: center;
+  color: rgb(231, 231, 198);
+  width:90px;
+  background-color: chartreuse;
+  margin: 0 auto;
+
+  
+
+}
+.link:hover{
+  background-color:darkcyan
+}
+   
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Personal Information</h1>
+    <div class="Input_name">
+      Name: <input type="text" id="Name" placeholder="Anee-Arkam">
+    </div>
+    <br>
+    <div class="Cnic_num">
+      Cnic: <input type="text" id="Cnic" placeholder="35202-xxxxxxx-x">
+    </div>
+    <br>
+    <div class="Gender">
+      <fieldset id="f1id">
+        <legend id="heading_of_gender">Select Gender</legend>
+        Male <input type="radio" id="1" name="Gender">
+        Female <input type="radio" id="2" name="Gender">
+      </fieldset>
+    </div>
+    <h1>Payment Information</h1>
+    <h4>Select Type</h4>
+    <div class="Paymentinfo">
+      <select type="enter" id="Select1">
+        <option>Select Card Type</option>
+        <option>Visa</option>
+        <option>SadaPay</option>
+        <option>Premium</option>
+      </select>
+    </div>
+    <br>
+    <p id="amount">
+      Enter Amount(PKR) <input type="number" required placeholder="xxxxxxxxx">
+    </p>
+    <div class="image-container">
+      <img src="image.jpg" alt="Payment Image">
+    </div>
+    <p>
+      Enter Card Number <input type="password" required>
+    </p>
+    <p>
+      Enter Card Expiry <input type="text" required placeholder="dd/mm/yyyy">
+    </p>
+    <p id="Sub">
+      <input type="submit">
+    </p>
+    <p class="link">
+      <a href="page.html" id="link">About Us</a>
+    </p>
+  </div>
+  
+</body>
+</html>
